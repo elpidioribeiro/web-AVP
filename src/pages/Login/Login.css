@@ -19,9 +19,10 @@
 }
 
 .logo {
-    width: 246px;
-    height: 275px; 
-    margin-bottom: 0px;
+    width: calc(246px*0.5);
+    height: calc(275px*0.5); 
+    margin-bottom: 60px;
+    margin-top: 80px;
 }
 
 .container-main input {

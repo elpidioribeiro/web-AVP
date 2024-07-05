@@ -1,4 +1,4 @@
-import logo from '../../assets/auto_viao_progresso_logo-removebg-preview.png'
+import logo from '../../assets/logoprogressonome-removebg-preview.png'
 import './Login.css'
 import imgUser from '../../assets/user.png'
 import imgPassword from '../../assets/lock.png'
