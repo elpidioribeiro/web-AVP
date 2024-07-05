@@ -3,13 +3,15 @@ import './Login.css'
 import imgUser from '../../assets/user.png'
 import imgPassword from '../../assets/lock.png'
 import { useState } from 'react';
-
-
+import logo2 from '../../assets/logo progresso.png'
+import {Link, useNavigate} from 'react-router-dom';
+ 
 
 
 
 function Login () {
 
+    const navigate = useNavigate();
     const [form, setForm] = useState({
         email: '',
         senha: ''
@@ -29,6 +31,10 @@ function Login () {
         }
     }
 
+    function handleRegister() {
+        navigate('/register');
+    }
+
     return (
         <>
         <div className='container-main'>
@@ -42,11 +48,11 @@ function Login () {
           <img className = 'usuario' src= {imgPassword} />
           <input placeholder='SENHA' name='senha' onChange={(e) => { handleChangeInput(e) }}/>
          </div>
-         <button className='botao' > ENTRAR </button>   
+         <button className='botao' type='submit' > ENTRAR </button>  
+         <button className='botao2' type='button' onClick={handleRegister} > REGISTRE-SE </button>   
         </form>
         </div>
-        </>
-        
+        </>    
     )
 }
 
