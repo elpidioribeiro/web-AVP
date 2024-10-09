@@ -51,8 +51,13 @@
     text-align: center;
     width: calc(269px*0.5);
     height: calc(40px*0.5);
+    margin: 0px;
     margin-bottom: 80px;
     font-weight: bold;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    border: 0px;
 }
 
 
@@ -79,6 +84,8 @@
     display: flex;
     flex-direction:  column;
     margin-bottom: 10px;
+    position: relative;
+
 
 }
 
@@ -131,3 +138,26 @@
    top: 370px;
 }
 
+.eye{
+    height: 11px;
+    position: absolute;
+    top: 10px;
+    left: 260px;
+    cursor: pointer;
+}
+
+.btn-register:hover {
+background-color: #28449B;
+}
+
+
+.register-form input:hover {
+ 
+    border-bottom: 1px solid #28449B;
+
+}
+
+.registerInput label:hover {
+    color: #28449B;
+
+}

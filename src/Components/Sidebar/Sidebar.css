@@ -1,0 +1,86 @@
+/* Sidebar.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Sidebar fixa e oculta por padrão */
+.sidebar {
+    width: 125px; /* Largura reduzida */
+    height: 100vh;
+    background-color: #003366; /* Azul escuro */
+    position: fixed;
+    top: 0;
+    left: -125px; /* Inicialmente oculta fora da tela */
+    transition: left 0.3s ease; /* Animação suave ao mover a sidebar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Mostra a sidebar quando o mouse está no canto esquerdo da página */
+body:hover .sidebar {
+    left: 0; /* Move a sidebar para a tela */
+}
+
+/* Logo no topo da sidebar */
+.sidebar-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0; /* Espaço ao redor do logo */
+}
+
+.sidebar-logo img {
+    width: 80%; /* Ajuste o tamanho do logo conforme necessário */
+    max-width: 100px; /* Ajuste o tamanho máximo do logo */
+    height: auto;
+}
+
+/* Conteúdo da sidebar com os botões na parte inferior */
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Move os botões para a parte inferior */
+    width: 100%;
+    padding-bottom: 20px; /* Espaço inferior */
+    margin-top: 100px;
+}
+
+/* Estilo dos itens da sidebar */
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent; /* Fundo transparente para o botão */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Cursor de ponteiro para o botão */
+}
+
+/* Estilo específico para o botão Sair */
+.sidebar-item:hover {
+    background-color: #002244; /* Cor ligeiramente mais escura ao passar o mouse */
+}
+
+.sidebar-item svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.sidebar-item span {
+    color: white; /* Garante que o texto também seja branco */
+}
+
+/* Adicional: Ajuste o botão especificamente, se necessário */
+button.sidebar-item {
+    background-color: transparent; /* Fundo transparente para o botão */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Cursor de ponteiro para o botão */
+}
