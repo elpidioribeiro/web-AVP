@@ -3,8 +3,7 @@ import logo from '../../assets/logoprogressonome-removebg-preview.png';
 import './Login.css';
 import imgUser from '../../assets/user.png';
 import imgPassword from '../../assets/lock.png';
-import logo2 from '../../assets/logo progresso.png';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import api from '../../services/api';
 import openEye from '../../assets/show-password.svg';
 import closeEye from '../../assets/hide-password.svg';
@@ -45,11 +44,9 @@ function Login() {
                 password: senha
             });
 
-            const registerLog = await api.post('/logAcess', {
+            await api.post('/logAcess', {
                 email
             });
-
-            console.log(response.data); // Acessa os dados da resposta
             setItem('token', response.data.token);
         } catch (error) {
             setErrorMessage(error.response ? error.response.data.message : 'Erro desconhecido');

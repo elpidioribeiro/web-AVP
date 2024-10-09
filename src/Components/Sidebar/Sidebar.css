@@ -17,6 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1000;
 }
 
 /* Mostra a sidebar quando o mouse está no canto esquerdo da página */
@@ -46,6 +47,7 @@ body:hover .sidebar {
     width: 100%;
     padding-bottom: 20px; /* Espaço inferior */
     margin-top: 100px;
+    z-index: 1000;
 }
 
 /* Estilo dos itens da sidebar */

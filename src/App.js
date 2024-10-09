@@ -2,7 +2,7 @@ import SignUp from './pages/Register/Register.jsx';
 import Login from './pages/Login/Login.jsx'
 import { Route, Routes, Outlet, Navigate } from 'react-router-dom';
 import { getItem } from './utils/storage.jsx';
-import Main from './pages/Main/Main.jsx';
+import Main from './pages/Main2/Main.jsx';
 
 function PrivateRoutes({ redirectTo }) {
   const authentication = getItem('token');

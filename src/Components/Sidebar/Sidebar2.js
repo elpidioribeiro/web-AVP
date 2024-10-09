@@ -33,13 +33,9 @@ const Sidebar = () => {
         <img src={logo} alt="Logo" />
       </div>
       <div className="sidebar-content">
-        <a href="#historico" className="sidebar-item">
-          <HistoryIcon />
-          <span>Histórico</span>
-        </a>
         <button className="sidebar-item" onClick={quit}>
           <LogoutIcon />
-          <span>Sair</span>
+          <span>SAIR</span>
         </button>
       </div>
     </div>

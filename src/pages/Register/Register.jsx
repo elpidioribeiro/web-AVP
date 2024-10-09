@@ -1,9 +1,5 @@
-import logo from '../../assets/auto_viao_progresso_logo-removebg-preview.png'
 import './register.css'
-import imgUser from '../../assets/user.png'
-import imgPassword from '../../assets/lock.png'
 import { useState } from 'react';
-import logo2 from '../../assets/progresso-removebg-preview.png'
 import logo3 from '../../assets/logoprogressonome-removebg-preview.png'
 import { Link, useNavigate } from 'react-router-dom';
 import api from '../../services/api';
