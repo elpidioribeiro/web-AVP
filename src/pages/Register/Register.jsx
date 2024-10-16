@@ -30,7 +30,7 @@ function Register () {
          alert('Preencha todos os campos');
             return;
         }
-        if(senha != confirmarSenha) {
+        if(senha !== confirmarSenha) {
             alert('Digite as senhas iguais');
             return;
         }
@@ -40,7 +40,7 @@ function Register () {
                 name : nome,
                 password : senha
             })
-
+            console.log(response);
             navigate('/'); // Redireciona para a página inicial após sucesso
         
         }
@@ -83,12 +83,12 @@ function Register () {
                         <input name='email' onChange={handleChangeInput}/> 
                     </div>
                     <div className='registerInput'>
-                        <img src= {stateEye < 0? showPassword : hidePassword } className='eye' onClick={handleChangeEye}/>
+                        <img alt = "."src= {stateEye < 0? showPassword : hidePassword } className='eye' onClick={handleChangeEye}/>
                         <label>Senha</label>
                         <input name='senha' onChange={handleChangeInput} type = {stateEye > 0? 'password': 'text'}/> 
                     </div>
                     <div className='registerInput'>
-                        <img src= {stateEyeConfirm < 0? showPassword : hidePassword } className='eye' onClick={handleChangeEyeConfirm}/>
+                        <img alt = "." src= {stateEyeConfirm < 0? showPassword : hidePassword } className='eye' onClick={handleChangeEyeConfirm}/>
                         <label>Confirmar senha</label>
                         <input name='confirmarSenha'onChange={handleChangeInput} type = {stateEyeConfirm > 0? 'password': 'text'}/> 
                     </div>

@@ -4,13 +4,6 @@ import logo from '../../assets/auto_viao_progresso_logo-removebg-preview.png'; /
 import { clear } from '../../utils/storage';
 import { useNavigate } from 'react-router-dom'; // Importa o hook useNavigate
 
-// Ícones em SVG
-const HistoryIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
-    <path d="M11 5v6l4 2"></path>
-    <circle cx="12" cy="12" r="10" stroke="white" strokeWidth="2" fill="none"></circle>
-  </svg>
-);
 
 const LogoutIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
